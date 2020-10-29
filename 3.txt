@@ -1,0 +1,9 @@
+#include<stdio.h>
+main()
+{
+char a,b;
+a='a';b='b';
+printf("a=%c,b=%c\n",a,b);
+a=a-32;b=b-32;
+printf("A=%c,B=%c\n",a,b);
+}
