@@ -1,0 +1,12 @@
+#define PI 3.1415
+#include<stdio.h>
+int main()
+{
+int r;
+float l,s;
+scanf("%d",&r);
+l=2*PI*r;
+s=PI*r*r;
+printf("半径：%d  周长：%f  面积:%f\n",r,l,s);
+return 0;
+}
