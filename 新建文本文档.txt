@@ -1,0 +1,7 @@
+#include<stdio.h>
+void main()
+{
+int b=2020;
+printf("%d\n",b);
+printf("欢迎来到VC++的世界！！！\n");
+}
