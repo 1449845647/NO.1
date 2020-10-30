@@ -1,0 +1,21 @@
+//#include<stdio.h>
+//void main()
+//{
+//int a,b,c,m;
+//scanf ("%d %d %d",a,b,c);
+//m=a+b+c/3;
+//printf("%d",m);
+//}
+//错误代码
+
+#include <stdio.h>
+void main()
+{
+double x,y,z;
+double sum,aveg;
+printf("请输入三门课的期末成绩(用空格分隔）");
+scanf("%lf %lf %lf",&x,&y,&z);
+sum=x+y+z;
+aveg=sum/3;
+printf("该同学三门课总分为%lf,均分为%.2lf。\n",sum,aveg);
+}
