@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+double a,b,c;
+double x1;
+scanf("%lf %lf %lf",&a,&b,&c);
+x1=sqrt(fabs(pow(b,2)-4*a*c))/(2*a);
+if (pow(b,2)-4*a*c==0)
+{
+printf("该方程有两个相等的实数。\n");
+printf("这两个实数根均为%lf\n,-b/(2*a)");
+}
+if (pow(b,2)-4*a*c>0)
+{
+printf("该方程有两个不相等的实数根。\n");
+printf("方程的一个根为%lf\t",(-b+sqrt(pow(b,2)-4*a*c))/(2*a));
+printf("方程的另一个根为%lf\n",((-b-sqrt(pow(b,2)-4*a*c))/(2*a)));
+}
+if (pow(b,2)-4*a*c<0)
+{
+printf("该方程有两个不相等的虚根。\n");
+printf("方程的实部为%lf\t",(-b)/(2*a));
+printf("方程的虚部为%lf\n",x1);
+}
+}
