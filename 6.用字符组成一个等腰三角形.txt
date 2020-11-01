@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main()
+{
+printf("%3c\n",'*');
+printf("%4s\n","***");
+printf("%5s\n","*****");
+}
