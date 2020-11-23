@@ -1,0 +1,22 @@
+#include<stdio.h>
+int fun(int x,int y,int z)
+{
+	int i,j,k,sum=0;
+	printf("红球数 白球数 黑球数\n");
+	for(i=1;i<=y;i++)
+	{
+		for(j=1;j<=y;j++)
+		{   k=8-i-j;
+		    if(k>=0&&k<=z)
+			{   sum++;
+			    printf("%5d %5d %5d\n",i,j,k);
+			}
+		}
+	}
+	return sum;
+}
+void main()
+{    int sum,x=3,y=5,z=6;
+     sum=fun(x,y,z);
+     printf("sum=%5d\n",sum);
+}
